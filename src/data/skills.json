@@ -1,0 +1,142 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Programming Languages",
+      "skills": [
+        {
+          "id": 1,
+          "name": "Java",
+          "logo": "/logos/skills/java-logo.webp"
+        },
+        {
+          "id": 2,
+          "name": "JavaScript",
+          "logo": "/logos/skills/javascript-logo.webp"
+        },
+        {
+          "id": 3,
+          "name": "TypeScript",
+          "logo": "/logos/skills/typescript-logo.png"
+        },
+        {
+          "id": 4,
+          "name": "C#",
+          "logo": "/logos/skills/csharp-logo.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Frameworks & Libraries",
+      "skills": [
+        {
+          "id": 5,
+          "name": "Spring",
+          "logo": "/logos/skills/spring-logo.png"
+        },
+        {
+          "id": 6,
+          "name": "Spring Boot",
+          "logo": "/logos/skills/springboot-logo.png"
+        },
+        {
+          "id": 7,
+          "name": "React",
+          "logo": "/logos/skills/react-logo.webp"
+        },
+        {
+          "id": 8,
+          "name": "Next.js",
+          "logo": "/logos/skills/nextjs-logo.png"
+        },
+        {
+          "id": 9,
+          "name": ".NET",
+          "logo": "/logos/skills/dotnet-logo.png"
+        },
+        {
+          "id": 10,
+          "name": "Thymeleaf",
+          "logo": "/logos/skills/thymeleaf-logo.png"
+        },
+        {
+          "id": 11,
+          "name": "Angular JS",
+          "logo": "/logos/skills/angularjs-logo.png"
+        },
+        {
+          "id": 12,
+          "name": "Express.js",
+          "logo": "/logos/skills/express-logo.png"
+        },
+        {
+          "id": 13,
+          "name": "Vue.js",
+          "logo": "/logos/skills/vue-logo.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Databases / Cloud / Other",
+      "skills": [
+        {
+          "id": 14,
+          "name": "MongoDB",
+          "logo": "/logos/skills/mongodb-logo.png"
+        },
+        {
+          "id": 15,
+          "name": "MySQL",
+          "logo": "/logos/skills/mysql-logo.webp"
+        },
+        {
+          "id": 16,
+          "name": "PostgreSQL",
+          "logo": "/logos/skills/postgresql-logo.png"
+        },
+        {
+          "id": 17,
+          "name": "Docker",
+          "logo": "/logos/skills/docker-logo.png"
+        },
+        {
+          "id": 18,
+          "name": "AWS",
+          "logo": "/logos/skills/aws-logo.webp"
+        },
+        {
+          "id": 19,
+          "name": "Azure",
+          "logo": "/logos/skills/azure-logo.png"
+        },
+        {
+          "id": 20,
+          "name": "BitBucket",
+          "logo": "/logos/skills/bitbucket-logo.webp"
+        },
+        {
+          "id": 21,
+          "name": "GitHub",
+          "logo": "/logos/skills/github-logo.png"
+        },
+        {
+          "id": 22,
+          "name": "GitLab",
+          "logo": "/logos/skills/gitlab-logo.png"
+        },
+        {
+          "id": 23,
+          "name": "Jira",
+          "logo": "/logos/skills/jira-logo.png"
+        },
+        {
+          "id": 24,
+          "name": "ELK",
+          "logo": "/logos/skills/elk-logo.png"
+        }
+      ]
+    }
+  ]
+}

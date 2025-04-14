@@ -1,0 +1,19 @@
+{
+  "name": "Gokul Abisheak",
+  "short_name": "Gokul Abisheak",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0f172b",
+  "background_color": "#0f172b",
+  "display": "standalone"
+}

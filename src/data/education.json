@@ -1,0 +1,34 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "degree": "BSc (Hons) in Information Technology Specialising in Software Engineering",
+      "school": "Sri Lankan Institute of Information Technology",
+      "logo": "/logos/sliit-logo.png",
+      "location": "Malabe, Sri Lanka",
+      "startDate": "2021-06",
+      "endDate": "Present",
+      "description": "CGPA - 3.3",
+      "achievements": [
+        "Treasurer - Student Interactive Society of SLIIT",
+        "Secretary - Faculty of Computing Student Community of SLIIT",
+        "Secretary - Software Engineering Student Community of SLIIT",
+        "Assistant Treasurer - Microsoft Club of SLIIT",
+        "Vice President - Athletic Committee of SLIIT"
+      ]
+    },
+    {
+      "id": 2,
+      "degree": "GCE Advanced Level - Physical Science",
+      "school": "Trinity College Kandy",
+      "logo": "/logos/trinity-logo.png",
+      "location": "Kandy, Sri Lanka",
+      "startDate": "2007-01",
+      "endDate": "2020-12",
+      "description": "Completed A/Ls in the Physical Science stream with a focus on Mathematics, Physics, and Information Communication Technology.",
+      "achievements": [
+        "Assistant Secretary - Information Communication Technology Society of Trinity College Kandy"
+      ]
+    }
+  ]
+}

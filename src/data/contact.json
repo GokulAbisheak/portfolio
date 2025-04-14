@@ -1,0 +1,78 @@
+{
+  "title": "Contact Me",
+  "subtitle": "Get In Touch",
+  "contactInfo": {
+    "email": {
+      "label": "Email",
+      "value": "gokulabisheak12@gmail.com",
+      "icon": "HiMail"
+    },
+    "phone": {
+      "label": "Phone",
+      "value": "+94 76 777 2891",
+      "icon": "HiPhone"
+    },
+    "location": {
+      "label": "Location",
+      "value": "Kandy, Sri Lanka",
+      "icon": "HiLocationMarker"
+    }
+  },
+  "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/in/gokul-abisheak",
+      "icon": "FaLinkedin"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/GokulAbisheak",
+      "icon": "FaGithub"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://instagram.com/gokulabisheak",
+      "icon": "FaInstagram"
+    },
+    {
+      "platform": "Medium",
+      "url": "https://medium.com/@gokulabisheak",
+      "icon": "FaMedium"
+    }
+  ],
+  "form": {
+    "title": "Send Me a Message",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "placeholder": "Your name",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "placeholder": "Your email",
+        "required": true
+      },
+      {
+        "name": "subject",
+        "label": "Subject",
+        "type": "text",
+        "placeholder": "Subject",
+        "required": true
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "placeholder": "Your message",
+        "required": true
+      }
+    ],
+    "submitButton": "Send Message",
+    "successMessage": "Message sent successfully! I'll get back to you soon."
+  }
+} 

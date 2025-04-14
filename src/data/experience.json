@@ -1,0 +1,56 @@
+{
+    "experiences": [
+      {
+        "id": 1,
+        "jobTitle": "Associate Software Engineer",
+        "workPlace": "Codeworks Technologies (Pvt) Ltd",
+        "logo": "/logos/codeworks-logo.jpg",
+        "startDate": "2024-04",
+        "endDate": "Present",
+        "description": [
+          "Developed full-stack application with Java, Spring, Spring Boot, Thymeleaf, JavaScript, and HTMX following industry best practices.",
+          "Integrated PostgreSQL for efficient data management and retrieval.",
+          "Implemented Docker containerization to streamline development and deployment.",
+          "Collaborated using BitBucket, JIRA, and Confluence for code reviews and knowledge sharing.",
+          "Customized Strapi headless CMS to improve content management workflows.",
+          "Contributed technical insights to business decision-making meetings."
+        ],
+        "skills": ["Java", "Spring Boot", "Thymeleaf", "JavaScript", "HTMX", "PostgreSQL", "Docker", "BitBucket", "JIRA", "Confluence", "Strapi"]
+      },
+      {
+        "id": 2,
+        "jobTitle": "Trainee DevOps Engineer",
+        "workPlace": "CodeGen International",
+        "logo": "/logos/codegen-logo.jpg",
+        "startDate": "2023-12",
+        "endDate": "2024-04",
+        "description": [
+          "Enhanced CI/CD pipelines in GitLab, improving deployment efficiency and maintainability.",
+          "Completed Spring Boot, Angular, and Linux courses with assessments from Codegen Academy.",
+          "Maintained Java/Spring Boot applications on AWS with Docker and NGINX integration.",
+          "Resolved ELK stack logging issues by implementing TCP over UDP in Logstash.",
+          "Designed indexing strategy with Lifecycle Management, increasing data retrieval by 25% while meeting retention policies.",
+          "Managed Linux production environments, improving reliability and troubleshooting.",
+          "Used JIRA for agile tracking and cross-team collaboration to streamline processes."
+        ],
+        "skills": ["GitLab", "CI/CD", "Spring Boot", "Angular", "Linux", "AWS", "Docker", "NGINX", "ELK Stack", "Logstash", "JIRA"]
+      },
+      {
+        "id": 3,
+        "jobTitle": "Intern Software Engineer",
+        "workPlace": "Codeworks Technologies (Pvt) Ltd",
+        "logo": "/logos/codeworks-logo.jpg",
+        "startDate": "2023-06",
+        "endDate": "2023-12",
+        "description": [
+          "Developed full-stack application using Java, Spring Boot, Vue.js and JavaScript.",
+          "Optimized MongoDB database interactions for improved data efficiency.",
+          "Deployed applications with Docker for consistent cross-environment delivery.",
+          "Collaborated through JIRA and BitBucket for code reviews and agile workflows.",
+          "Rapidly adopted new technologies through self-learning and mentorship."
+        ],
+        "skills": ["Java", "Spring Boot", "Vue.js", "JavaScript", "MongoDB", "Docker", "JIRA", "BitBucket"]
+      }
+    ]
+  }
+  

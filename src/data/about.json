@@ -1,0 +1,38 @@
+{
+  "profile": {
+    "name": "Gokul Abisheak",
+    "title": "Software Engineer & Full Stack Developer",
+    "image": "/images/about-me.jpg",
+    "description": "I am a passionate Software Engineer with a strong foundation in full-stack development and a keen interest in creating efficient, scalable solutions. Currently pursuing my BSc (Hons) in Information Technology with a specialization in Software Engineering at SLIIT, I combine academic knowledge with practical experience to deliver robust software solutions.",
+    "education": "BSc (Hons) in Information Technology - SLIIT",
+    "location": "Colombo, Sri Lanka",
+    "cgpa": "3.3",
+    "cvLink": "/cv.pdf"
+  },
+  "skills": [
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "C#",
+    "Spring",
+    "Spring Boot",
+    "React",
+    "Next.js",
+    ".NET",
+    "Thymeleaf",
+    "Angular JS",
+    "Express.js",
+    "Vue.js",
+    "MongoDB",
+    "MySQL",
+    "PostgreSQL",
+    "Docker",
+    "AWS",
+    "Azure",
+    "BitBucket",
+    "GitHub",
+    "GitLab",
+    "Jira",
+    "ELK"
+  ]
+}
