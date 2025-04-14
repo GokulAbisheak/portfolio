@@ -1,6 +1,7 @@
 "use client";
 
-import { FaGithub, FaLinkedin, FaInstagram, FaMedium } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaMedium } from "react-icons/fa6";
 import { HiMail } from 'react-icons/hi';
 
 const Footer = () => {

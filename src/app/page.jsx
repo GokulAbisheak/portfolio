@@ -12,7 +12,8 @@ import homeData from "@/data/home.json"
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
-import { FaGithub, FaLinkedin, FaInstagram, FaMedium } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaMedium } from "react-icons/fa6";
 import { generatePortfolioJsonLd } from './json-ld';
 import Head from 'next/head';
 
