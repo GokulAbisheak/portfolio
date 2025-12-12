@@ -2,11 +2,11 @@
     "name": "Gokul Abisheak",
     "roles": ["Software Engineer", "Full Stack Developer", "Problem Solver", "Tech Enthusiast"],
     "resume": "/cv/Gokul-Abisheak-Srirajan-SE.pdf",
-    "image": "/images/gokul-abisheak.jpg",
+    "image": "/images/gokul-abisheak.jpeg",
     "socialLinks": [
       { "platform": "GitHub", "url": "https://github.com/GokulAbisheak", "icon": "FaGithub" },
       { "platform": "LinkedIn", "url": "https://linkedin.com/in/gokulabisheak", "icon": "FaLinkedin" },
-      { "platform": "Instagram", "url": "https://instagram.com/gokulabisheak", "icon": "FaInstagram" },
+      { "platform": "Instagram", "url": "https://instagram.com/gokulabisheak", "icon": "AiFillInstagram" },
       { "platform": "Medium", "url": "https://medium.com/@gokulabisheak", "icon": "FaMedium" }
     ]
   }

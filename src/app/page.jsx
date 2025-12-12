@@ -12,8 +12,9 @@ import homeData from "@/data/home.json"
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FaMedium } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
 import { generatePortfolioJsonLd } from './json-ld';
 import Head from 'next/head';
 
@@ -32,7 +33,7 @@ export default function Home() {
   const socialLinks = homeData.socialLinks || [
     { platform: 'GitHub', url: 'https://github.com/GokulAbisheak', icon: 'FaGithub' },
     { platform: 'LinkedIn', url: 'https://linkedin.com/in/gokulabisheak', icon: 'FaLinkedin' },
-    { platform: 'Instagram', url: 'https://instagram.com/gokulabisheak', icon: 'FaInstagram' },
+    { platform: 'Instagram', url: 'https://instagram.com/gokulabisheak', icon: 'AiFillInstagram' },
     { platform: 'Medium', url: 'https://medium.com/@gokulabisheak', icon: 'FaMedium' },
   ];
 
@@ -64,7 +65,7 @@ export default function Home() {
                   {socialLinks.map((link) => {
                     const Icon = link.icon === 'FaGithub' ? FaGithub : 
                                 link.icon === 'FaLinkedin' ? FaLinkedin : 
-                                link.icon === 'FaInstagram' ? FaInstagram : 
+                                link.icon === 'AiFillInstagram' ? AiFillInstagram : 
                                 link.icon === 'FaMedium' ? FaMedium : null;
                     
                     return (
@@ -73,7 +74,7 @@ export default function Home() {
                         href={link.url} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="bg-slate-800 p-3 rounded-full text-white hover:bg-teal-500 transition-colors"
+                        className="bg-slate-800 p-3 rounded-full text-white hover:bg-teal-500 transition-colors cursor-pointer"
                         aria-label={`Visit my ${link.platform} profile`}
                       >
                         {Icon && <Icon className="text-xl" />}
@@ -90,8 +91,8 @@ export default function Home() {
                   <Image
                     src={homeData.image || "/images/profile.jpg"}
                     alt="Gokul Abisheak"
-                    width={300}
-                    height={300}
+                    width={500}
+                    height={500}
                     className="object-cover w-full h-full"
                     priority
                   />
@@ -104,7 +105,7 @@ export default function Home() {
           <div className="flex justify-center mt-8">
             <button 
               onClick={() => scrollToSection('about')}
-              className="bg-slate-800 text-white p-3 rounded-full hover:bg-teal-500 transition-colors"
+              className="bg-slate-800 text-white p-3 rounded-full hover:bg-teal-500 transition-colors cursor-pointer"
               aria-label="Scroll to About section"
             >
               <HiArrowDown className="text-xl" />
@@ -116,7 +117,7 @@ export default function Home() {
         <div className="fixed bottom-4 right-4 z-50">
           <button 
             onClick={() => setIsClose(!isClose)}
-            className="bg-slate-800 text-white p-2 rounded-lg hover:bg-teal-500 transition-colors flex items-center gap-2"
+            className="bg-slate-800 text-white p-2 rounded-lg hover:bg-teal-500 transition-colors flex items-center gap-2 cursor-pointer"
           >
             <HiCommandLine className="text-xl" />
             <span className="hidden md:inline">Terminal</span>

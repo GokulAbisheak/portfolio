@@ -21,8 +21,8 @@
         },
         {
           "id": 4,
-          "name": "C#",
-          "logo": "/logos/skills/csharp-logo.png"
+          "name": "Python",
+          "logo": "/logos/skills/python-logo.png"
         }
       ]
     },
@@ -32,11 +32,6 @@
       "skills": [
         {
           "id": 5,
-          "name": "Spring",
-          "logo": "/logos/skills/spring-logo.png"
-        },
-        {
-          "id": 6,
           "name": "Spring Boot",
           "logo": "/logos/skills/springboot-logo.png"
         },
@@ -51,9 +46,19 @@
           "logo": "/logos/skills/nextjs-logo.png"
         },
         {
-          "id": 9,
-          "name": ".NET",
-          "logo": "/logos/skills/dotnet-logo.png"
+          "id": 14,
+          "name": "Node.js",
+          "logo": "/logos/skills/nodejs-logo.png"
+        },
+        {
+          "id": 15,
+          "name": "Django",
+          "logo": "/logos/skills/django-logo.png"
+        },
+        {
+          "id": 13,
+          "name": "Vue.js",
+          "logo": "/logos/skills/vue-logo.png"
         },
         {
           "id": 10,
@@ -61,9 +66,9 @@
           "logo": "/logos/skills/thymeleaf-logo.png"
         },
         {
-          "id": 11,
-          "name": "Angular JS",
-          "logo": "/logos/skills/angularjs-logo.png"
+          "id": 16,
+          "name": "HTMX",
+          "logo": "/logos/skills/htmx-logo.png"
         },
         {
           "id": 12,
@@ -71,16 +76,26 @@
           "logo": "/logos/skills/express-logo.png"
         },
         {
-          "id": 13,
-          "name": "Vue.js",
-          "logo": "/logos/skills/vue-logo.png"
+          "id": 11,
+          "name": "Angular",
+          "logo": "/logos/skills/angularjs-logo.png"
         }
       ]
     },
     {
       "id": 3,
-      "name": "Databases / Cloud / Other",
+      "name": "Databases",
       "skills": [
+        {
+          "id": 16,
+          "name": "PostgreSQL",
+          "logo": "/logos/skills/postgresql-logo.png"
+        },
+        {
+          "id": 25,
+          "name": "DynamoDB",
+          "logo": "/logos/skills/dynamodb-logo.png"
+        },
         {
           "id": 14,
           "name": "MongoDB",
@@ -90,11 +105,27 @@
           "id": 15,
           "name": "MySQL",
           "logo": "/logos/skills/mysql-logo.webp"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cloud & DevOps",
+      "skills": [
+        {
+          "id": 18,
+          "name": "AWS",
+          "logo": "/logos/skills/aws-logo.webp"
         },
         {
-          "id": 16,
-          "name": "PostgreSQL",
-          "logo": "/logos/skills/postgresql-logo.png"
+          "id": 26,
+          "name": "Lambda",
+          "logo": "/logos/skills/lambda-logo.png"
+        },
+        {
+          "id": 27,
+          "name": "AWS SQS",
+          "logo": "/logos/skills/sqs-logo.png"
         },
         {
           "id": 17,
@@ -102,15 +133,41 @@
           "logo": "/logos/skills/docker-logo.png"
         },
         {
-          "id": 18,
-          "name": "AWS",
-          "logo": "/logos/skills/aws-logo.webp"
+          "id": 28,
+          "name": "Datadog",
+          "logo": "/logos/skills/datadog-logo.png"
         },
         {
-          "id": 19,
-          "name": "Azure",
-          "logo": "/logos/skills/azure-logo.png"
+          "id": 29,
+          "name": "CI/CD",
+          "logo": "/logos/skills/cicd-logo.png"
         },
+        {
+          "id": 30,
+          "name": "NGINX",
+          "logo": "/logos/skills/nginx-logo.png"
+        },
+        {
+          "id": 24,
+          "name": "ELK Stack",
+          "logo": "/logos/skills/elk-logo.png"
+        },
+        {
+          "id": 31,
+          "name": "Logstash",
+          "logo": "/logos/skills/logstash-logo.png"
+        },
+        {
+          "id": 32,
+          "name": "Linux",
+          "logo": "/logos/skills/linux-logo.png"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Tools & Platforms",
+      "skills": [
         {
           "id": 20,
           "name": "BitBucket",
@@ -128,13 +185,18 @@
         },
         {
           "id": 23,
-          "name": "Jira",
+          "name": "JIRA",
           "logo": "/logos/skills/jira-logo.png"
         },
         {
-          "id": 24,
-          "name": "ELK",
-          "logo": "/logos/skills/elk-logo.png"
+          "id": 33,
+          "name": "Confluence",
+          "logo": "/logos/skills/confluence-logo.png"
+        },
+        {
+          "id": 34,
+          "name": "Strapi",
+          "logo": "/logos/skills/strapi-logo.webp"
         }
       ]
     }

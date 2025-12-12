@@ -1,19 +1,21 @@
 "use client"
 
 import React, { useState } from 'react';
-import { FaLinkedin, FaGithub, FaInstagram, FaMedium } from 'react-icons/fa';
-import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaMedium, FaLocationDot } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
+import { HiMail, HiPhone } from 'react-icons/hi';
 import contactData from '@/data/contact.json';
 
 // Icon mapping object
 const iconMap = {
   FaLinkedin,
   FaGithub,
-  FaInstagram,
+  AiFillInstagram,
   FaMedium,
   HiMail,
   HiPhone,
-  HiLocationMarker
+  FaLocationDot
 };
 
 const Contact = () => {
@@ -82,11 +84,11 @@ const Contact = () => {
                     <div>
                       <h4 className="text-white font-medium">{info.label}</h4>
                       {key === 'email' ? (
-                        <a href={`mailto:${info.value}`} className="text-gray-300 hover:text-teal-500 transition-colors">
+                        <a href={`mailto:${info.value}`} className="text-gray-300 hover:text-teal-500 transition-colors cursor-pointer">
                           {info.value}
                         </a>
                       ) : key === 'phone' ? (
-                        <a href={`tel:${info.value}`} className="text-gray-300 hover:text-teal-500 transition-colors">
+                        <a href={`tel:${info.value}`} className="text-gray-300 hover:text-teal-500 transition-colors cursor-pointer">
                           {info.value}
                         </a>
                       ) : (
@@ -108,7 +110,7 @@ const Contact = () => {
                     href={link.url} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-slate-700 rounded-lg text-white hover:bg-teal-500 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 bg-slate-700 rounded-lg text-white hover:bg-teal-500 transition-colors cursor-pointer"
                   >
                     {renderIcon(link.icon)}
                     <span>{link.platform}</span>
@@ -155,7 +157,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3 px-4 bg-teal-500 text-white rounded-lg font-medium hover:bg-teal-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-3 px-4 bg-teal-500 text-white rounded-lg font-medium hover:bg-teal-600 transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Sending...' : contactData.form.submitButton}
               </button>

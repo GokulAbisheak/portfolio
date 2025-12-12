@@ -1,7 +1,8 @@
 "use client";
 
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FaMedium } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
 import { HiMail } from 'react-icons/hi';
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
   const socialLinks = [
     { platform: 'GitHub', url: 'https://github.com/GokulAbisheak', icon: FaGithub },
     { platform: 'LinkedIn', url: 'https://linkedin.com/in/gokulabisheak', icon: FaLinkedin },
-    { platform: 'Instagram', url: 'https://instagram.com/gokulabisheak', icon: FaInstagram },
+    { platform: 'Instagram', url: 'https://instagram.com/gokulabisheak', icon: AiFillInstagram },
     { platform: 'Medium', url: 'https://medium.com/@gokulabisheak', icon: FaMedium },
   ];
 
@@ -33,7 +34,7 @@ const Footer = () => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-teal-500 transition-colors"
+                    className="text-gray-400 hover:text-teal-500 transition-colors cursor-pointer"
                     aria-label={`Visit my ${link.platform} profile`}
                   >
                     <Icon size={20} />
@@ -42,7 +43,7 @@ const Footer = () => {
               })}
               <a
                 href="mailto:gokulabisheak12@gmail.com"
-                className="text-gray-400 hover:text-teal-500 transition-colors"
+                className="text-gray-400 hover:text-teal-500 transition-colors cursor-pointer"
                 aria-label="Send me an email"
               >
                 <HiMail size={20} />

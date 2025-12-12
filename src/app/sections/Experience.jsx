@@ -22,51 +22,110 @@ const Experience = () => {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-white mb-12">Experience</h2>
         <div className="space-y-12">
-          {experienceData.experiences.map((exp) => (
-            <div
-              key={exp.id}
-              className="relative pl-8 border-l-2 border-teal-500"
-            >
-              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-teal-500" />
-              <div className="flex flex-col md:flex-row gap-6 mb-4">
-                <div className="relative w-20 h-20 rounded-lg overflow-hidden bg-white p-2 flex-shrink-0">
-                  <Image
-                    src={exp.logo}
-                    alt={`${exp.workPlace} logo`}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-white">
-                    {exp.jobTitle}
-                  </h3>
-                  <p className="text-gray-400">{exp.workPlace}</p>
-                  <p className="text-sm text-gray-500">
-                    {formatDate(exp.startDate)} - {exp.endDate}
-                  </p>
-                </div>
-              </div>
-              <ul className="text-gray-300 mb-4">
-                {exp.description.map((description, index) => (
-                  <div key={index} className="flex items-start gap-2">
-                    <span className="text-teal-400 mt-1">•</span>
-                    <p className="text-gray-300">{description}</p>
+          {experienceData.experiences.map((exp) => {
+            // Check if this experience has multiple positions
+            const hasMultiplePositions = exp.positions && exp.positions.length > 0;
+            const positions = hasMultiplePositions ? exp.positions : [exp];
+            
+            return (
+              <div
+                key={exp.id}
+                className="relative pl-8 border-l-2 border-teal-500"
+              >
+                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-teal-500" />
+                <div className="flex flex-col md:flex-row gap-6 mb-4">
+                  <div className="relative w-20 h-20 rounded-lg overflow-hidden bg-white p-2 flex-shrink-0">
+                    <Image
+                      src={exp.logo}
+                      alt={`${exp.workPlace} logo`}
+                      fill
+                      className="object-contain"
+                    />
                   </div>
-                ))}
-              </ul>
-              <div className="flex flex-wrap gap-2">
-                {exp.skills.map((skill, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 text-sm bg-teal-500/10 text-teal-400 rounded-full"
-                  >
-                    {skill}
-                  </span>
-                ))}
+                  <div className="flex-1">
+                    {hasMultiplePositions ? (
+                      <div>
+                        <h3 className="text-2xl font-semibold text-white mb-2">
+                          {exp.workPlace}
+                        </h3>
+                        <p className="text-sm text-gray-500 mb-4">
+                          {formatDate(positions[positions.length - 1].startDate)} - {positions[0].endDate === "Present" ? positions[0].endDate : formatDate(positions[0].endDate)}
+                        </p>
+                      </div>
+                    ) : (
+                      <div>
+                        <h3 className="text-2xl font-semibold text-white">
+                          {exp.jobTitle}
+                        </h3>
+                        <p className="text-gray-400">{exp.workPlace}</p>
+                        <p className="text-sm text-gray-500">
+                          {formatDate(exp.startDate)} - {exp.endDate === "Present" ? exp.endDate : formatDate(exp.endDate)}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                
+                {hasMultiplePositions ? (
+                  <div className="space-y-6">
+                    {positions.map((position, posIndex) => (
+                      <div key={posIndex} className="ml-4 border-l-2 border-teal-500/30 pl-4">
+                        <div className="mb-2">
+                          <h4 className="text-xl font-semibold text-white">
+                            {position.jobTitle}
+                          </h4>
+                          <p className="text-sm text-gray-500">
+                            {formatDate(position.startDate)} - {position.endDate === "Present" ? position.endDate : formatDate(position.endDate)}
+                          </p>
+                        </div>
+                        <ul className="text-gray-300 mb-4">
+                          {position.description.map((description, index) => (
+                            <div key={index} className="flex items-start gap-2">
+                              <span className="text-teal-400 mt-1">•</span>
+                              <p className="text-gray-300">{description}</p>
+                            </div>
+                          ))}
+                        </ul>
+                        {position.skills && position.skills.length > 0 && (
+                          <div className="flex flex-wrap gap-2 mb-4">
+                            {position.skills.map((skill, index) => (
+                              <span
+                                key={index}
+                                className="px-3 py-1 text-sm bg-teal-500/10 text-teal-400 rounded-full"
+                              >
+                                {skill}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <>
+                    <ul className="text-gray-300 mb-4">
+                      {exp.description.map((description, index) => (
+                        <div key={index} className="flex items-start gap-2">
+                          <span className="text-teal-400 mt-1">•</span>
+                          <p className="text-gray-300">{description}</p>
+                        </div>
+                      ))}
+                    </ul>
+                    <div className="flex flex-wrap gap-2">
+                      {exp.skills.map((skill, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 text-sm bg-teal-500/10 text-teal-400 rounded-full"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </>
+                )}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>

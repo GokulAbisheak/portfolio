@@ -152,7 +152,7 @@ const Projects = () => {
                 setFilter('all');
                 setCurrentPage(1);
               }}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+              className={`px-4 py-2 rounded-lg font-medium transition-colors cursor-pointer ${
                 filter === 'all' 
                   ? 'bg-teal-500 text-white' 
                   : 'bg-slate-700 text-gray-300 hover:bg-slate-600'
@@ -165,7 +165,7 @@ const Projects = () => {
                 setFilter('starred');
                 setCurrentPage(1);
               }}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+              className={`px-4 py-2 rounded-lg font-medium transition-colors cursor-pointer ${
                 filter === 'starred' 
                   ? 'bg-teal-500 text-white' 
                   : 'bg-slate-700 text-gray-300 hover:bg-slate-600'
@@ -178,7 +178,7 @@ const Projects = () => {
                 setFilter('forked');
                 setCurrentPage(1);
               }}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+              className={`px-4 py-2 rounded-lg font-medium transition-colors cursor-pointer ${
                 filter === 'forked' 
                   ? 'bg-teal-500 text-white' 
                   : 'bg-slate-700 text-gray-300 hover:bg-slate-600'
@@ -192,7 +192,7 @@ const Projects = () => {
           <div className="flex flex-wrap gap-3 mb-8">
             <button
               onClick={() => handleSortChange('stars')}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center ${
+              className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center cursor-pointer ${
                 sortBy === 'stars' 
                   ? 'bg-teal-500 text-white' 
                   : 'bg-slate-700 text-gray-300 hover:bg-slate-600'
@@ -202,7 +202,7 @@ const Projects = () => {
             </button>
             <button
               onClick={() => handleSortChange('forks')}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center ${
+              className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center cursor-pointer ${
                 sortBy === 'forks' 
                   ? 'bg-teal-500 text-white' 
                   : 'bg-slate-700 text-gray-300 hover:bg-slate-600'
@@ -212,7 +212,7 @@ const Projects = () => {
             </button>
             <button
               onClick={() => handleSortChange('updated')}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center ${
+              className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center cursor-pointer ${
                 sortBy === 'updated' 
                   ? 'bg-teal-500 text-white' 
                   : 'bg-slate-700 text-gray-300 hover:bg-slate-600'
@@ -222,7 +222,7 @@ const Projects = () => {
             </button>
             <button
               onClick={() => handleSortChange('name')}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center ${
+              className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center cursor-pointer ${
                 sortBy === 'name' 
                   ? 'bg-teal-500 text-white' 
                   : 'bg-slate-700 text-gray-300 hover:bg-slate-600'
@@ -263,7 +263,7 @@ const Projects = () => {
                         href={repo.html_url} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="hover:text-teal-500 transition-colors"
+                        className="hover:text-teal-500 transition-colors cursor-pointer"
                       >
                         {repo.name}
                       </a>
@@ -305,7 +305,7 @@ const Projects = () => {
                       href={repo.html_url} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-teal-500 hover:text-teal-400 transition-colors flex items-center gap-1"
+                      className="text-teal-500 hover:text-teal-400 transition-colors flex items-center gap-1 cursor-pointer"
                     >
                       <FaGithub />
                       <span>View on GitHub</span>
@@ -315,7 +315,7 @@ const Projects = () => {
                         href={repo.homepage} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-teal-500 hover:text-teal-400 transition-colors"
+                        className="text-teal-500 hover:text-teal-400 transition-colors cursor-pointer"
                       >
                         Live Demo
                       </a>
@@ -335,7 +335,7 @@ const Projects = () => {
                 className={`p-2 rounded-lg ${
                   currentPage === 1
                     ? 'bg-slate-800 text-gray-500 cursor-not-allowed'
-                    : 'bg-slate-800 text-white hover:bg-slate-700'
+                    : 'bg-slate-800 text-white hover:bg-slate-700 cursor-pointer'
                 }`}
               >
                 <HiChevronLeft />
@@ -345,7 +345,7 @@ const Projects = () => {
                 <button
                   key={page}
                   onClick={() => handlePageChange(page)}
-                  className={`w-10 h-10 rounded-lg ${
+                  className={`w-10 h-10 rounded-lg cursor-pointer ${
                     currentPage === page
                       ? 'bg-teal-500 text-white'
                       : 'bg-slate-800 text-white hover:bg-slate-700'
@@ -361,7 +361,7 @@ const Projects = () => {
                 className={`p-2 rounded-lg ${
                   currentPage === totalPages
                     ? 'bg-slate-800 text-gray-500 cursor-not-allowed'
-                    : 'bg-slate-800 text-white hover:bg-slate-700'
+                    : 'bg-slate-800 text-white hover:bg-slate-700 cursor-pointer'
                 }`}
               >
                 <HiChevronRight />

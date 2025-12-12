@@ -23,6 +23,7 @@ const Terminal = ({ isClose = false, setIsClose }) => {
     "education",
     "skills",
     "projects",
+    "contact",
   ];
 
   const processInput = (e) => {
@@ -32,6 +33,7 @@ const Terminal = ({ isClose = false, setIsClose }) => {
     let newPath = path;
     let output = "";
     let answer = "";
+    let shouldClear = false;
 
     if (trimmedInput.startsWith("cd")) {
       const arg = trimmedInput.slice(2).trim();
@@ -55,16 +57,73 @@ const Terminal = ({ isClose = false, setIsClose }) => {
       }
     } else if (trimmedInput.startsWith("pwd")) {
       answer = path;
+    } else if (trimmedInput === "ls" || trimmedInput === "dir") {
+      answer = `Available sections:\n  ${validPaths.join("\n  ")}`;
+    } else if (trimmedInput === "clear" || trimmedInput === "cls") {
+      shouldClear = true;
+    } else if (trimmedInput === "whoami") {
+      answer = "Gokul Abisheak\nSoftware Engineer | Full Stack Developer | Problem Solver | Tech Enthusiast";
+    } else if (trimmedInput === "date") {
+      answer = new Date().toLocaleString();
+    } else if (trimmedInput.startsWith("echo")) {
+      const text = trimmedInput.slice(4).trim();
+      answer = text || "";
+    } else if (trimmedInput === "contact") {
+      newPath = "https://gokulabisheak.dev/contact";
+      window.location.hash = "#contact";
+    } else if (trimmedInput === "resume") {
+      window.open("/cv/Gokul-Abisheak-Srirajan-SE.pdf", "_blank");
+      answer = "Opening resume...";
+    } else if (trimmedInput === "github") {
+      window.open("https://github.com/GokulAbisheak", "_blank");
+      answer = "Opening GitHub profile...";
+    } else if (trimmedInput === "linkedin") {
+      window.open("https://linkedin.com/in/gokulabisheak", "_blank");
+      answer = "Opening LinkedIn profile...";
+    } else if (trimmedInput === "instagram") {
+      window.open("https://instagram.com/gokulabisheak", "_blank");
+      answer = "Opening Instagram profile...";
+    } else if (trimmedInput === "medium") {
+      window.open("https://medium.com/@gokulabisheak", "_blank");
+      answer = "Opening Medium profile...";
+    } else if (trimmedInput === "help" || trimmedInput === "--help" || trimmedInput === "-h" || trimmedInput === "?") {
+      answer = `Available commands:
+  cd [section]  - Navigate to a section (home, about, experience, education, skills, projects, contact)
+  cd ..         - Navigate back to home
+  pwd           - Display current path
+  ls / dir      - List available sections
+  clear / cls   - Clear the terminal
+  whoami        - Display user information
+  date          - Display current date and time
+  echo [text]   - Echo text to the terminal
+  contact       - Navigate to contact section
+  resume        - Open resume PDF
+  github        - Open GitHub profile
+  linkedin      - Open LinkedIn profile
+  instagram     - Open Instagram profile
+  medium        - Open Medium profile
+  help          - Show this help message
+  --help        - Show this help message
+  -h            - Show this help message
+  ?             - Show this help message
+
+Available sections:
+  ${validPaths.join(", ")}`;
     } else {
       output = `'${
         trimmedInput.split(" ")[0]
-      }' is not recognized as an internal or external command, operable program or batch file.`;
+      }' is not recognized as an internal or external command, operable program or batch file.
+Type 'help' or '--help' for a list of available commands.`;
     }
 
-    setLogs((prevLogs) => [
-      ...prevLogs,
-      { path, command: trimmedInput, output, answer },
-    ]);
+    if (shouldClear) {
+      setLogs([]);
+    } else {
+      setLogs((prevLogs) => [
+        ...prevLogs,
+        { path, command: trimmedInput, output, answer },
+      ]);
+    }
 
     setPath(newPath);
     setInput("");
@@ -112,7 +171,7 @@ const Terminal = ({ isClose = false, setIsClose }) => {
                     onClick={() => {
                       clickMinimize();
                     }}
-                    className="p-3 hover:bg-gray-400 duration-200"
+                    className="p-3 hover:bg-gray-400 duration-200 cursor-pointer"
                   >
                     <VscChromeMinimize />
                   </button>
@@ -120,7 +179,7 @@ const Terminal = ({ isClose = false, setIsClose }) => {
                     onClick={() => {
                       clickMaximize();
                     }}
-                    className="p-3 hover:bg-gray-400 duration-200"
+                    className="p-3 hover:bg-gray-400 duration-200 cursor-pointer"
                   >
                     {isMaximize ? <VscChromeRestore /> : <VscChromeMaximize />}
                   </button>
@@ -128,7 +187,7 @@ const Terminal = ({ isClose = false, setIsClose }) => {
                     onClick={() => {
                       resetTerminal();
                     }}
-                    className="p-3 hover:bg-red-600 duration-200"
+                    className="p-3 hover:bg-red-600 duration-200 cursor-pointer"
                   >
                     <VscChromeClose />
                   </button>
@@ -140,6 +199,9 @@ const Terminal = ({ isClose = false, setIsClose }) => {
                   Gokul Abisheak Portfolio [Version 2.0]
                   <br />
                   (c) Gokul Abisheak. All rights reserved.
+                  <br />
+                  <br />
+                  type <span className="text-blue-400">help</span> for more information
                 </div>
 
                 {logs.map((log, index) => (
@@ -151,7 +213,7 @@ const Terminal = ({ isClose = false, setIsClose }) => {
                     {log.output && (
                       <div className="text-red-400">{log.output}</div>
                     )}
-                    {log.answer && <div>{log.answer}</div>}
+                    {log.answer && <div className="whitespace-pre-wrap">{log.answer}</div>}
                   </div>
                 ))}
 

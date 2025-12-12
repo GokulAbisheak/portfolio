@@ -15,7 +15,7 @@
     "location": {
       "label": "Location",
       "value": "Kandy, Sri Lanka",
-      "icon": "HiLocationMarker"
+      "icon": "FaLocationDot"
     }
   },
   "socialLinks": [
@@ -32,7 +32,7 @@
     {
       "platform": "Instagram",
       "url": "https://instagram.com/gokulabisheak",
-      "icon": "FaInstagram"
+      "icon": "AiFillInstagram"
     },
     {
       "platform": "Medium",

@@ -2,11 +2,43 @@
     "experiences": [
       {
         "id": 1,
+        "workPlace": "Innobot Health",
+        "logo": "/logos/innobot-logo.jpeg",
+        "positions": [
+          {
+            "jobTitle": "Software Engineer",
+            "startDate": "2025-11",
+            "endDate": "Present",
+            "description": [
+              "Completely built a complex dashboard for an internal project, integrating multiple databases for comprehensive data management.",
+              "Separated services and implemented a microservices architecture to improve scalability and maintainability.",
+              "Created a multi-agent system that provides AI insights, seamlessly integrated into the dashboard for enhanced decision-making capabilities.",
+              "Supervised junior developers in the project, providing guidance and ensuring code quality standards.",
+              "Fixed critical bugs in the system, improving stability and reliability of the application."
+            ],
+            "skills": ["TypeScript", "JavaScript", "Next.js", "Node.js", "AWS", "Lambda", "AWS SQS", "PostgreSQL", "DynamoDB", "AI/ML"]
+          },
+          {
+            "jobTitle": "Associate Software Engineer",
+            "startDate": "2025-03",
+            "endDate": "2025-10",
+            "description": [
+              "Worked on a Python-based project for a US client, taking charge of building the decision tree system and integrations.",
+              "Built an AI-powered decision tree system that intelligently selects the best DME (Durable Medical Equipment) partner based on multiple criteria.",
+              "Implemented order placement integration to automatically route orders to the selected DME partner.",
+              "Integrated Datadog for comprehensive log management and monitoring, improving system observability and debugging capabilities."
+            ],
+            "skills": ["Python", "Django", "AI/ML", "Datadog", "AWS", "Lambda", "AWS SQS"]
+          }
+        ]
+      },
+      {
+        "id": 3,
         "jobTitle": "Associate Software Engineer",
         "workPlace": "Codeworks Technologies (Pvt) Ltd",
         "logo": "/logos/codeworks-logo.jpg",
         "startDate": "2024-04",
-        "endDate": "Present",
+        "endDate": "2025-02",
         "description": [
           "Developed full-stack application with Java, Spring, Spring Boot, Thymeleaf, JavaScript, and HTMX following industry best practices.",
           "Integrated PostgreSQL for efficient data management and retrieval.",
@@ -18,7 +50,7 @@
         "skills": ["Java", "Spring Boot", "Thymeleaf", "JavaScript", "HTMX", "PostgreSQL", "Docker", "BitBucket", "JIRA", "Confluence", "Strapi"]
       },
       {
-        "id": 2,
+        "id": 4,
         "jobTitle": "Trainee DevOps Engineer",
         "workPlace": "CodeGen International",
         "logo": "/logos/codegen-logo.jpg",
@@ -36,7 +68,7 @@
         "skills": ["GitLab", "CI/CD", "Spring Boot", "Angular", "Linux", "AWS", "Docker", "NGINX", "ELK Stack", "Logstash", "JIRA"]
       },
       {
-        "id": 3,
+        "id": 5,
         "jobTitle": "Intern Software Engineer",
         "workPlace": "Codeworks Technologies (Pvt) Ltd",
         "logo": "/logos/codeworks-logo.jpg",
@@ -53,4 +85,3 @@
       }
     ]
   }
-  

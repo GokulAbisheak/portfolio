@@ -56,7 +56,7 @@ const Navbar = () => {
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
-                className={`text-sm font-medium capitalize transition-colors duration-200 ${
+                className={`text-sm font-medium capitalize transition-colors duration-200 cursor-pointer ${
                   activeSection === section 
                     ? 'text-teal-500' 
                     : 'text-gray-300 hover:text-teal-500'
@@ -71,7 +71,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white p-2"
+              className="text-white p-2 cursor-pointer"
               aria-label={isOpen ? "Close menu" : "Open menu"}
             >
               {isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
@@ -88,7 +88,7 @@ const Navbar = () => {
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
-                className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium capitalize ${
+                className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium capitalize cursor-pointer ${
                   activeSection === section
                     ? 'bg-slate-700 text-teal-500'
                     : 'text-gray-300 hover:bg-slate-700 hover:text-teal-500'
